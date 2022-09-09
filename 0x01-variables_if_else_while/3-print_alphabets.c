@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -11,13 +10,21 @@
 
 int main(void)
 {
-	int i = 65;
+	int i = 97;
+
+	while (i < 123)
+	{
+		putchar(i);
+		i++;
+	}
+
+	i = 65;
 
 	while (i < 91)
 	{
 		putchar(i);
-		putchar(i+32);
+		i++;
 	}
-	putchar(10);	
+	putchar(10);
 	return (0);
 }
