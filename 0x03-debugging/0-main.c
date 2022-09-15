@@ -14,3 +14,8 @@ int main(void)
 
 	return (0);
 }
+
+void positive_or_negative(int n)
+{
+	printf("hello");
+}
