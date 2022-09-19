@@ -1,6 +1,6 @@
 #include <string.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
  * _puts - displays the string
  * @str: string
@@ -11,8 +11,9 @@
 void _puts(char *str)
 {
 	int len = strlen(str);
+	int i = 0;
 
-	for (int i = 0; i < len; i++)
+	for (i = 0; i < len; i++)
 	{
 		putchar(str[i]);
 	}
