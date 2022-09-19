@@ -11,13 +11,13 @@
 int _atoi(char *s)
 {
 	int len = strlen(s);
-	int i, sign, num;
+	int i, num;
 
 	for (i = 1; i < len; i++)
 	{
 		num = num * 10 + s[i];
 	}
-	if (s[0] == "-")
+	if (s[0] == '-')
 	{
 		num = num * -1;
 	}
