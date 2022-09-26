@@ -13,15 +13,11 @@ char *_strchr(char *s, char c)
 	int len = strlen(s);
 	int i;
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (c == s[i])
 		{
 			return (s[i]);
-		}
-		else
-		{
-			continue;
 		}
 	}
 	return (NULL);
