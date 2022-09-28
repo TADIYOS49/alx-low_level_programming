@@ -9,16 +9,12 @@
 
 int check_int(int num, int x)
 {
+	if (num == x)
+		return (1);
 	if (num % x == 0)
 		return (0);
 	else if (num % x != 0)
-	{
 		return (check_int(num, x + 1));
-	}
-	else
-	{
-		return (1);
-	}
 }
 
 /**
@@ -36,7 +32,7 @@ int is_prime_number(int n)
 	if (n <= 0)
 		return (0);
 	else if (n == 1)
-		return (1);
+		return (0);
 	else
 		return (check_int(n, start));
 }
