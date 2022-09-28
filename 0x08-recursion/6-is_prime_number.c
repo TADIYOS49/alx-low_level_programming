@@ -15,6 +15,7 @@ int check_int(int num, int x)
 		return (0);
 	else if (num % x != 0)
 		return (check_int(num, x + 1));
+	return (0);
 }
 
 /**
