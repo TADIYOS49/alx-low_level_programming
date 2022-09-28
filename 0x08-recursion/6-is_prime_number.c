@@ -1,0 +1,42 @@
+#include "main.h"
+
+/**
+ * check_int - checks if it is divisible by number or not
+ * @num: number
+ * @x: integer
+ * Return: integer
+ */
+
+int check_int(int num, int x)
+{
+	if (num % x == 0)
+		return (0);
+	else if (num % x != 0)
+	{
+		return (check_int(num, x + 1));
+	}
+	else
+	{
+		return (1);
+	}
+}
+
+/**
+ * is_prime_number -returns 1 if it is prime and 0 if it is not
+ * @n: integer
+ * Return: integer
+ */
+
+int is_prime_number(int n)
+{
+	int start;
+
+	start = 2;
+
+	if (n <= 0)
+		return (0);
+	else if (n == 1)
+		return (1);
+	else
+		return (check_int(n, start));
+}
