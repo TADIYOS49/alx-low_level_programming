@@ -8,13 +8,13 @@
  */
 
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int i = 1;
 
 	while (i < argc)
 	{
-		printf("%s\n", (argv + i));
+		printf("%s\n", args[i]);
 		i++;
 	}
 	return (0);
