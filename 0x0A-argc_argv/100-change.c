@@ -8,19 +8,19 @@
  * Return: (0)
  */
 
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int div[5] = {25, 10, 5, 2, 1};
 	int num = atoi(argv[1]);
 	int counter = 0;
 	int i = 0;
 
-	if (argv[2] != NULL)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (num <= 0)
+	if (num < 0)
 	{
 		printf("0\n");
 		return (0);
