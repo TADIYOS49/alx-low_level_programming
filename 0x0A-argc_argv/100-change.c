@@ -15,7 +15,6 @@ int main(__attribute__((unused)) int argc, char *argv[])
 	int counter = 0;
 	int i = 0;
 
-	printf("%d\n", num);
 	if (argv[2] != NULL)
 	{
 		printf("Error\n");
