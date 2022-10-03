@@ -17,10 +17,10 @@ char *str_concat(char *s1, char *s2)
 	int i;
 	int j = 0;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 		return (NULL);
 
-	arr = (char *) malloc((len1 + len2 + 2) * sizeof(char));
+	arr = (char *) malloc((len1 + len2 + 1) * sizeof(char));
 	if (arr == NULL)
 		return (NULL);
 
