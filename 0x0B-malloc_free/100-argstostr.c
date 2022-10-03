@@ -10,7 +10,8 @@
 
 char *argstostr(int ac, char **av)
 {
-	int length, i, j, b;
+	int length, i, b;
+	unsigned int j;
 	char *str;
 
 	if (ac == 0 || av == NULL)
@@ -31,7 +32,7 @@ char *argstostr(int ac, char **av)
 	{
 		for (j = 0; j < strlen(av[i]); j++)
 		{
-			str[k] = av[i][j];
+			str[b] = av[i][j];
 			b++;
 		}
 		str[b] = '\n';
