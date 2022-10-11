@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdio.h>
 /**
  * init_dog - initialize the elements in the dog struct
  * @name: dog's name
