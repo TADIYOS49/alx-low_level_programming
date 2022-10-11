@@ -1,0 +1,28 @@
+#include "dog.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * new_dog - creates new dog object
+ * @name: string
+ * @age: float
+ * @owner: string
+ * Return: dog_t
+*/
+
+dog_t *new_dog(char *name, float age, char *owner)
+{
+	dog_t *dog;
+	char *name1, *owner1;
+
+	dog = malloc(sizeof(dog_t));
+	if (dog == NULL)
+		return (NULL);
+
+	name1 = name;
+	owner1 = owner;
+
+	dog->name = name1;
+	dog->age = age;
+	dog->owner = owner1;
+	return (dog);
+}
