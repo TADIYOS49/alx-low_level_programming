@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_list - return the number of nodes
+ * print_list - return the number of the nodes and the nodes data
  * @h: pointer to the node
  * Return: integer
 */
